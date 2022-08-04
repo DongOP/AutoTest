@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Dong's测试套件">
+    <test name="Dong's测试模块">
+        <classes>
+            <!-- 添加不同测试类文件 -->
+            <class name="testcase.TestDemo"/>
+        </classes>
+    </test>
+
+    <!-- extentreports 监听器 -->
+    <listeners>
+        <listener class-name="org.tcl.autotest.listener.ExtentTestNGIReporterListener"></listener>
+    </listeners>
+</suite>
+
+
