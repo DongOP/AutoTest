@@ -16,6 +16,9 @@ import org.json.JSONObject;
 
 import java.security.cert.CertificateException;
 
+/**
+ * 目前有bug，发现无法执行回调中的代码，影响接口返回数据的校验
+ */
 public class OkHttpUtils {
 
     private static final OkHttpUtils mOkHttpUtils = new OkHttpUtils();
