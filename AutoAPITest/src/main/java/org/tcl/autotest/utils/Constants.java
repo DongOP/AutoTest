@@ -14,5 +14,5 @@ public class Constants {
     public static final String SEND_EMAIL_NAME = "724847367";
     // 开启POP3/SMTP服务得到的授权码
     // -------------  注意 -------------该数据需保密
-    public static final String SEND_EMAIL_CODE = "tpchyhiwzwvxbchj";
+    public static final String SEND_EMAIL_CODE = "xxxx";
 }
