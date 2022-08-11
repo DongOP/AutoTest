@@ -2,7 +2,7 @@
 ##  测试报告
 ### 一、使用 Extentreports
 1. 新建testng.xml，建好suite和监听器ExtentTestNGIReporterListener
-2. 右键testng.xml执行，或者使用命令行：mvn clean test -DsuiteXmlFile=D:/Work/APITest/AutoTest/AutoAPITest/src/main/resourcestestng.xml
+2. 右键testng.xml执行，或者使用命令行：mvn clean test -DsuiteXmlFile=D:/Work/APITest/AutoTest/AutoAPITest/src/main/resources/testng.xml
 3. 在 .\AutoAPITest\test-output 里面找到 extentReports-index.html，用 chrome 打开
 
 ### 二、使用 Allure
