@@ -16,7 +16,7 @@ import static org.apache.poi.ss.usermodel.CellType.NUMERIC;
 
 public class ExcelUtils {
 
-//    private static final Logger LOGGER = LoggerFactory.getLogger(ExcelUtils.class);
+//    private static Logger mLogger = Logger.getLogger(Main.class.getClass());
 
     /**
      * 解析 excel 文件

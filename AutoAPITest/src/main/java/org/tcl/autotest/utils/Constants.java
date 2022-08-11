@@ -9,4 +9,10 @@ public class Constants {
 
     public static final Integer EXCEL_RESPONSE_CODE_KEY = 2;
     public static final Integer EXCEL_RESPONSE_CODE_VALUE = 3;
+
+    public static final String SEND_EMAIL_ADDRESS = "724847367@qq.com";
+    public static final String SEND_EMAIL_NAME = "724847367";
+    // 开启POP3/SMTP服务得到的授权码
+    // -------------  注意 -------------该数据需保密
+    public static final String SEND_EMAIL_CODE = "xxxxx";
 }

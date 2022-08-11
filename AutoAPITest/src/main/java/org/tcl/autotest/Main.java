@@ -7,8 +7,8 @@ public class Main {
     private static Logger mLogger = Logger.getLogger(Main.class.getClass());
 
     public static void main(String[] args) {
-//        ExcelUtils.readExcel(1, 1);
-        mLogger.info("----------- INFO --------");
-        mLogger.error("----------- ERROR --------");
+//        mLogger.info("----------- INFO --------");
+//        mLogger.error("----------- ERROR --------");
+        System.out.println("");
     }
 }
