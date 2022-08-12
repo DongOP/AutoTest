@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 8.095 s <<< FAILURE! - in TestSuite
-test1(testcase.TestDemo)  Time elapsed: 0.017 s  <<< FAILURE!
+Tests run: 10, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 8.633 s <<< FAILURE! - in TestSuite
+test1(testcase.TestDemo)  Time elapsed: 0.015 s  <<< FAILURE!
 java.lang.AssertionError: expected [2] but found [1]
 	at testcase.TestDemo.test1(TestDemo.java:21)
 
-testTimeOut(testcase.TestDemo)  Time elapsed: 2.97 s  <<< FAILURE!
+testTimeOut(testcase.TestDemo)  Time elapsed: 2.982 s  <<< FAILURE!
 org.testng.internal.thread.ThreadTimeoutException: Method testcase.TestDemo.testTimeOut() didn't finish within the time-out 3000
 	at app//testcase.TestDemo.testTimeOut(TestDemo.java:132)
 

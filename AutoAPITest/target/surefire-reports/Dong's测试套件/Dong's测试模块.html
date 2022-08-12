@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>7/2/1</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Aug 12 15:25:30 CST 2022</td>
+<td>Started on:</td><td>Fri Aug 12 16:41:54 CST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>4 seconds (4984 ms)</td>
+<tr><td>Total time:</td><td>5 seconds (5620 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,17 +76,17 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testcase.TestDemo.test1()'><b>test1</b><br>Test class: testcase.TestDemo<br>Test method: 单元测试验证<br/>
-<a href="#Output-726374052" onClick='toggleBox("Output-726374052", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-154146418" onClick='toggleBox("Output-154146418", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-726374052" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-726374052">
+<a href="#Output-154146418" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-154146418">
 校验数据 a=1<br/>
 </div>
 </td>
 <td><div><pre>java.lang.AssertionError: expected [2] but found [1]
 	at testcase.TestDemo.test1(TestDemo.java:21)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace726374052", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace726374052'><pre>java.lang.AssertionError: expected [2] but found [1]
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace154146418", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace154146418'><pre>java.lang.AssertionError: expected [2] but found [1]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
@@ -125,30 +125,27 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
 <td>0</td>
-<td>testcase.TestDemo@2aa27288</td></tr>
+<td>testcase.TestDemo@7ea4d397</td></tr>
 <tr>
 <td title='testcase.TestDemo.testTimeOut()'><b>testTimeOut</b><br>Test class: testcase.TestDemo</td>
 <td><div><pre>org.testng.internal.thread.ThreadTimeoutException: Method testcase.TestDemo.testTimeOut() didn&apos;t finish within the time-out 3000
-	at java.base@17.0.3.1/java.io.FileOutputStream.writeBytes(Native Method)
-	at java.base@17.0.3.1/java.io.FileOutputStream.write(FileOutputStream.java:349)
-	at java.base@17.0.3.1/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
-	at java.base@17.0.3.1/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
-	at java.base@17.0.3.1/java.io.PrintStream.write(PrintStream.java:570)
+	at java.base@17.0.3.1/java.util.Arrays.copyOf(Arrays.java:3537)
+	at java.base@17.0.3.1/java.lang.String.encodeUTF8(String.java:1265)
+	at java.base@17.0.3.1/java.lang.String.encode(String.java:825)
+	at java.base@17.0.3.1/java.lang.String.getBytes(String.java:1803)
 	at app//testcase.TestDemo.testTimeOut(TestDemo.java:132)
 	at java.base@17.0.3.1/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
 	at java.base@17.0.3.1/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base@17.0.3.1/java.lang.Thread.run(Thread.java:833)
-... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1461001018", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1461001018'><pre>org.testng.internal.thread.ThreadTimeoutException: Method testcase.TestDemo.testTimeOut() didn&apos;t finish within the time-out 3000
-	at java.base@17.0.3.1/java.io.FileOutputStream.writeBytes(Native Method)
-	at java.base@17.0.3.1/java.io.FileOutputStream.write(FileOutputStream.java:349)
-	at java.base@17.0.3.1/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
-	at java.base@17.0.3.1/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
-	at java.base@17.0.3.1/java.io.PrintStream.write(PrintStream.java:570)
-	at app//org.apache.maven.surefire.booter.ForkingRunListener.writeTestOutput(ForkingRunListener.java:208)
-	at app//org.apache.maven.surefire.report.ConsoleOutputCapture$ForwardingPrintStream.println(ConsoleOutputCapture.java:91)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1562221939", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1562221939'><pre>org.testng.internal.thread.ThreadTimeoutException: Method testcase.TestDemo.testTimeOut() didn&apos;t finish within the time-out 3000
+	at java.base@17.0.3.1/java.util.Arrays.copyOf(Arrays.java:3537)
+	at java.base@17.0.3.1/java.lang.String.encodeUTF8(String.java:1265)
+	at java.base@17.0.3.1/java.lang.String.encode(String.java:825)
+	at java.base@17.0.3.1/java.lang.String.getBytes(String.java:1803)
+	at app//org.apache.maven.surefire.report.ConsoleOutputCapture$ForwardingPrintStream.println(ConsoleOutputCapture.java:90)
 	at app//testcase.TestDemo.testTimeOut(TestDemo.java:132)
 	at java.base@17.0.3.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@17.0.3.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -164,7 +161,7 @@ function toggleAllBoxes() {
 	at java.base@17.0.3.1/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
 <td>3</td>
-<td>testcase.TestDemo@2aa27288</td></tr>
+<td>testcase.TestDemo@7ea4d397</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -175,10 +172,10 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testcase.TestDemo.checkMapNotNull()'><b>checkMapNotNull</b><br>Test class: testcase.TestDemo<br>Test method: 遍历检查Map不为空<br/>
-<a href="#Output-1135400862" onClick='toggleBox("Output-1135400862", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1501888239" onClick='toggleBox("Output-1501888239", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1135400862" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1135400862">
+<a href="#Output-1501888239" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1501888239">
 Key = 0, Value = 1<br/>
 Key = 1, Value = TestBaidu<br/>
 Key = 2, Value = get<br/>
@@ -187,48 +184,48 @@ Key = 4, Value = json<br/>
 </div>
 </td>
 <td></td>
-<td>1</td>
-<td>testcase.TestDemo@2aa27288</td></tr>
+<td>0</td>
+<td>testcase.TestDemo@7ea4d397</td></tr>
 <tr>
 <td title='testcase.TestDemo.test()'><b>test</b><br>Test class: testcase.TestDemo<br>Parameters: 10, 20</td>
 <td></td>
 <td>0</td>
-<td>testcase.TestDemo@2aa27288</td></tr>
+<td>testcase.TestDemo@7ea4d397</td></tr>
 <tr>
 <td title='testcase.TestDemo.test()'><b>test</b><br>Test class: testcase.TestDemo<br>Parameters: 100, 110</td>
 <td></td>
 <td>0</td>
-<td>testcase.TestDemo@2aa27288</td></tr>
+<td>testcase.TestDemo@7ea4d397</td></tr>
 <tr>
 <td title='testcase.TestDemo.test()'><b>test</b><br>Test class: testcase.TestDemo<br>Parameters: 200, 210</td>
 <td></td>
 <td>0</td>
-<td>testcase.TestDemo@2aa27288</td></tr>
+<td>testcase.TestDemo@7ea4d397</td></tr>
 <tr>
 <td title='testcase.TestDemo.testHttpGet()'><b>testHttpGet</b><br>Test class: testcase.TestDemo<br>Test method: doGet 请求测试<br/>
-<a href="#Output-1822624650" onClick='toggleBox("Output-1822624650", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-95980430" onClick='toggleBox("Output-95980430", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1822624650" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1822624650">
+<a href="#Output-95980430" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-95980430">
 测试URL（来自excel）=https://www.baidu.com/sugrec?prod=pc_his&from=pc_web&json=1&sid=36838_36542_36757_36726_36413_36955_36946_36165_36917_36570_36807_36738_36923_26350_36864&hisdata=%5B%7B%22time%22%3A1659578071%2C%22kw%22%3A%22notepad%2B%2B%E6%98%AF%E4%BB%80%E4%B9%88%E8%BD%AF%E4%BB%B6%22%7D%2C%7B%22time%22%3A1659578074%2C%22kw%22%3A%22notepad%2B%2B%22%7D%2C%7B%22time%22%3A1659578089%2C%22kw%22%3A%22notepad%2B%2B%E4%B8%8B%E8%BD%BD%22%7D%2C%7B%22time%22%3A1659578907%2C%22kw%22%3A%22eclipse%22%7D%2C%7B%22time%22%3A1659579451%2C%22kw%22%3A%22maven%E5%BC%95%E5%85%A5okhttp3%22%7D%2C%7B%22time%22%3A1659580009%2C%22kw%22%3A%22maven%E6%B7%BB%E5%8A%A0okhttp%22%7D%2C%7B%22time%22%3A1659580146%2C%22kw%22%3A%22okhttp%E7%89%88%E6%9C%AC%E5%8F%B7%22%7D%2C%7B%22time%22%3A1659580753%2C%22kw%22%3A%22org.json%22%7D%2C%7B%22time%22%3A1659580762%2C%22kw%22%3A%22org.json%E7%89%88%E6%9C%AC%E5%8F%B7%22%7D%2C%7B%22time%22%3A1659581203%2C%22kw%22%3A%2295566%22%7D%5D&_t=1659581298387&req=2&sc=eb&csor=0<br/>
 HttpUtils responseCodeKey=err_no, 校验 responseCodeValue=0<br/>
-HttpUtils测试 okFlag=true, ---result={"q":"","p":false,"bs":"","csor":"0","err_no":0,"errmsg":"","g":[{"type":"his_normal","sa":"h_1","q":"95566"},{"type":"his_normal","sa":"h_2","q":"org.json版本号"},{"type":"his_normal","sa":"h_3","q":"org.json"},{"type":"his_normal","sa":"h_4","q":"okhttp版本号"},{"type":"his_normal","sa":"h_5","q":"maven添加okhttp"},{"type":"his_normal","sa":"h_6","q":"maven引入okhttp3"},{"type":"his_normal","sa":"h_7","q":"eclipse"},{"type":"his_normal","sa":"h_8","q":"notepad++下载"},{"type":"his_normal","sa":"h_9","q":"notepad++"},{"type":"his_normal","sa":"h_10","q":"notepad++是什么软件"}],"queryid":"0x2d9b3ee51181a9"}
+HttpUtils测试 okFlag=true, ---result={"q":"","p":false,"bs":"","csor":"0","err_no":0,"errmsg":"","g":[{"type":"his_normal","sa":"h_1","q":"95566"},{"type":"his_normal","sa":"h_2","q":"org.json版本号"},{"type":"his_normal","sa":"h_3","q":"org.json"},{"type":"his_normal","sa":"h_4","q":"okhttp版本号"},{"type":"his_normal","sa":"h_5","q":"maven添加okhttp"},{"type":"his_normal","sa":"h_6","q":"maven引入okhttp3"},{"type":"his_normal","sa":"h_7","q":"eclipse"},{"type":"his_normal","sa":"h_8","q":"notepad++下载"},{"type":"his_normal","sa":"h_9","q":"notepad++"},{"type":"his_normal","sa":"h_10","q":"notepad++是什么软件"}],"queryid":"0x9c28ba23541ee4"}
 <br/>
 </div>
 </td>
 <td></td>
-<td>0</td>
-<td>testcase.TestDemo@2aa27288</td></tr>
+<td>1</td>
+<td>testcase.TestDemo@7ea4d397</td></tr>
 <tr>
 <td title='testcase.TestDemo.testHttpPost()'><b>testHttpPost</b><br>Test class: testcase.TestDemo<br>Test method: doPost 请求测试</td>
 <td></td>
 <td>0</td>
-<td>testcase.TestDemo@2aa27288</td></tr>
+<td>testcase.TestDemo@7ea4d397</td></tr>
 <tr>
 <td title='testcase.TestDemo.testHttpPostMap()'><b>testHttpPostMap</b><br>Test class: testcase.TestDemo<br>Test method: doPostForm 请求测试</td>
 <td></td>
 <td>0</td>
-<td>testcase.TestDemo@2aa27288</td></tr>
+<td>testcase.TestDemo@7ea4d397</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -239,9 +236,9 @@ HttpUtils测试 okFlag=true, ---result={"q":"","p":false,"bs":"","csor":"0","err
 </tr>
 <tr>
 <td title='testcase.TestFileUtil.testFileUtils()'><b>testFileUtils</b><br>Test class: testcase.TestFileUtil<br>Test method: 测试 FileUtils</td>
-<td><div><pre>java.lang.Throwable: Method TestFileUtil.testFileUtils()[pri:0, instance:testcase.TestFileUtil@7f34a967] depends on not successfully finished methods in group &quot;TestDemo&quot;
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1511319053", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1511319053'><pre>java.lang.Throwable: Method TestFileUtil.testFileUtils()[pri:0, instance:testcase.TestFileUtil@7f34a967] depends on not successfully finished methods in group &quot;TestDemo&quot;
+<td><div><pre>java.lang.Throwable: Method TestFileUtil.testFileUtils()[pri:0, instance:testcase.TestFileUtil@49298ce7] depends on not successfully finished methods in group &quot;TestDemo&quot;
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2045560071", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2045560071'><pre>java.lang.Throwable: Method TestFileUtil.testFileUtils()[pri:0, instance:testcase.TestFileUtil@49298ce7] depends on not successfully finished methods in group &quot;TestDemo&quot;
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
