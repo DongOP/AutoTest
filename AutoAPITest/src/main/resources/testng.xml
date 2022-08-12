@@ -5,6 +5,8 @@
         <classes>
             <!-- 添加不同测试类文件 -->
             <class name="testcase.TestDemo"/>
+            <class name="testcase.TestFileUtil"/>
+            <class name="testcase.TestEmail"/>
         </classes>
     </test>
 

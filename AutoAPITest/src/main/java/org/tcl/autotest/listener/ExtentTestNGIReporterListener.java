@@ -8,6 +8,7 @@ import com.aventstack.extentreports.model.TestAttribute;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import org.tcl.autotest.utils.Constants;
 import org.testng.*;
 import org.testng.xml.XmlSuite;
 
@@ -105,8 +106,7 @@ public class ExtentTestNGIReporterListener implements IReporter {
             reportDir.mkdir();
         }
 
-        String FILE_NAME = System.currentTimeMillis() + ".html";
-        ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(OUTPUT_FOLDER + FILE_NAME);
+        ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(OUTPUT_FOLDER + Constants.TEST_REPORT_NAME);
         // 设置静态文件的DNS
         // 解决cdn.rawgit.com访问不了的情况
         htmlReporter.config().setResourceCDN(ResourceCDN.EXTENTREPORTS);

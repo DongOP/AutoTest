@@ -1,6 +1,7 @@
 package org.tcl.autotest;
 
 import org.apache.log4j.Logger;
+import org.tcl.autotest.utils.FileUtils;
 
 public class Main {
     // 使用 log4j 打印日志
@@ -9,6 +10,6 @@ public class Main {
     public static void main(String[] args) {
 //        mLogger.info("----------- INFO --------");
 //        mLogger.error("----------- ERROR --------");
-        System.out.println("");
+
     }
 }

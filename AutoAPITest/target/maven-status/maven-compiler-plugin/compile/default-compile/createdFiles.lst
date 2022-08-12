@@ -1,10 +1,13 @@
 org\tcl\autotest\utils\OkHttpUtils$CallBack.class
+org\tcl\autotest\utils\SendEmailUtils.class
 org\tcl\autotest\utils\ExcelUtils$1.class
 org\tcl\autotest\listener\ExtentTestNGIReporterListener$1.class
 org\tcl\autotest\utils\OkHttpUtils$4.class
 org\tcl\autotest\utils\OkHttpUtils$1.class
+org\tcl\autotest\utils\FileUtils.class
 org\tcl\autotest\Main.class
 org\tcl\autotest\utils\HttpUtils.class
+org\tcl\autotest\utils\FileUtils$1.class
 org\tcl\autotest\utils\OkHttpUtils$2.class
 org\tcl\autotest\listener\ExtentTestNGIReporterListener.class
 org\tcl\autotest\utils\HttpUtils$CallBack.class

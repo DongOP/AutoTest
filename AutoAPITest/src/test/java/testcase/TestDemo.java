@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class TestDemo {
 
-    @Test(description = "接口测试2")
+    @Test(groups = "TestDemo", description = "接口测试2")
     public void test1() {
         System.out.println("test1 Begin!");
         int a = 1;
@@ -20,7 +20,7 @@ public class TestDemo {
         Assert.assertEquals(a, 2);
     }
 
-    @Test(description = "遍历检查Map不为空")
+    @Test(groups = "TestDemo", description = "遍历检查Map不为空")
     public void checkMapNotNull() {
         Map<Integer, Object> msgs = ExcelUtils.readExcel(1, 2);
         msgs = ExcelUtils.readExcel(1, 2);
@@ -30,7 +30,7 @@ public class TestDemo {
         }
     }
 
-    @Test(description = "doGet 请求测试")
+    @Test(groups = "TestDemo", description = "doGet 请求测试")
     public void testHttpGet() {
         Map<Integer, Object> excelMap = ExcelUtils.readExcel(1, 2);
         String requestUrl = excelMap.get(Constants.EXCEL_REQUEST_URL_INDEX).toString();
@@ -54,7 +54,7 @@ public class TestDemo {
         });
     }
 
-    @Test(description = "doPost 请求测试")
+    @Test(groups = "TestDemo", description = "doPost 请求测试")
     public void testHttpPost() {
         String url = "http://localhost:8082/api/core/login";
         JSONObject json = new JSONObject();
@@ -74,7 +74,7 @@ public class TestDemo {
 
     }
 
-    @Test(description = "doPostForm 请求测试")
+    @Test(groups = "TestDemo", description = "doPostForm 请求测试")
     public void testHttpPostMap() {
         String url = "http://localhost:8082/api/core/login";
         Map<String, String> map = new HashMap<>();
@@ -94,7 +94,7 @@ public class TestDemo {
 
     }
 
-    @Test(description = "请求测试(okhttp)，跳过不执行", enabled = false)
+    @Test(groups = "TestDemo", description = "请求测试(okhttp)，跳过不执行", enabled = false)
     public void testOkHttpGet() {
         Reporter.log("用例开始执行");
         Map<Integer, Object> excelMap = ExcelUtils.readExcel(1, 2);
@@ -123,7 +123,7 @@ public class TestDemo {
         });
     }
 
-    @Test(timeOut = 3000)
+    @Test(groups = "TestDemo",timeOut = 3000)
     public void testTimeOut() {
         try {
             Thread.sleep(3100);
@@ -132,7 +132,7 @@ public class TestDemo {
         }
     }
 
-    @Test(dataProvider = "provideNumbers")
+    @Test(groups = "TestDemo", dataProvider = "provideNumbers")
     public void test(int number, int expected) {
         Assert.assertEquals(number + 10, expected);
     }

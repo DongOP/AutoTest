@@ -8,10 +8,20 @@
     <classes>
       <class name="testcase.TestDemo">
         <methods>
+          <include name="testHttpPostMap"/>
+          <include name="testHttpPost"/>
           <include name="test1"/>
+          <include name="test"/>
+          <include name="checkMapNotNull"/>
           <include name="testTimeOut"/>
+          <include name="testHttpGet"/>
         </methods>
       </class> <!-- testcase.TestDemo -->
+      <class name="testcase.TestFileUtil">
+        <methods>
+          <include name="testFileUtils"/>
+        </methods>
+      </class> <!-- testcase.TestFileUtil -->
     </classes>
   </test> <!-- Dong's测试模块(failed) -->
 </suite> <!-- Failed suite [Dong's测试套件] -->

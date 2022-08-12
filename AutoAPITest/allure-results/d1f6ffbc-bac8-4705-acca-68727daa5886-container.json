@@ -1,0 +1,1 @@
+{"uuid":"d1f6ffbc-bac8-4705-acca-68727daa5886","name":"Dong's测试套件","start":1660272004930,"stop":1660272010091,"children":["ccbc0672-c574-49af-9b2e-afce3fccbaa1"],"afters":[{"name":"测试邮件发送","status":"passed","stage":"finished","description":"测试邮件发送","start":1660272010002,"stop":1660272010091}]}

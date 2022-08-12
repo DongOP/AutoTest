@@ -14,7 +14,9 @@ import java.util.Properties;
 public class SendEmailUtils {
 
     private static final SendEmailUtils mSendEmailUtils = new SendEmailUtils();
-    private SendEmailUtils(){}
+
+    private SendEmailUtils() {
+    }
 
     public static SendEmailUtils getInstance() {
         return mSendEmailUtils;
@@ -31,11 +33,14 @@ public class SendEmailUtils {
 
     /**
      * 发送邮件
-     * @param emailAddress 收件人的邮箱地址
+     *
+     * @param toAddress  收件人邮箱地址
+     * @param ccAddress  抄送人邮箱地址
      * @param emailTitle 邮件主题
-     * @param emailMsg 邮件内容
+     * @param emailMsg   邮件内容
+     * @param fileName   附件目录
      */
-    public static boolean sendMail(String emailAddress, String emailTitle, String emailMsg, String fileName) {
+    public boolean sendMail(String toAddress, String ccAddress, String emailTitle, String emailMsg, String fileName) {
         //设置参数
         Properties properties = new Properties();
         properties.put("mail.transport.protocol", "smtp");// 连接协议
@@ -60,14 +65,23 @@ public class SendEmailUtils {
             // Set From: 发件人
             message.setFrom(new InternetAddress(Constants.SEND_EMAIL_ADDRESS));
             // Set To: 收件人
-            String[] strings = emailAddress.split(",");
+            String[] strings = toAddress.split(",");
             //将收件人信息通过‘,’拆分多个邮件地址
             InternetAddress[] internetAddresses = new InternetAddress[strings.length];
             for (int i = 0; i < strings.length; i++) {
                 internetAddresses[i] = new InternetAddress(strings[i]);
             }
             //添加收件人信息
-            message.setRecipients(MimeMessage.RecipientType.TO,internetAddresses);
+            message.setRecipients(MimeMessage.RecipientType.TO, internetAddresses);
+            // Set CC: 抄送人
+            String[] cc = ccAddress.split(",");
+            //将收件人信息通过‘,’拆分多个邮件地址
+            InternetAddress[] ccAddresses = new InternetAddress[cc.length];
+            for (int i = 0; i < cc.length; i++) {
+                ccAddresses[i] = new InternetAddress(cc[i]);
+            }
+            //添加收件人信息
+            message.setRecipients(MimeMessage.RecipientType.CC, ccAddresses);
             // Set Subject: 主题文字
             message.setSubject(emailTitle);
             // 创建消息部分
@@ -85,14 +99,14 @@ public class SendEmailUtils {
             messageBodyPart.setDataHandler(new DataHandler(source));
             // messageBodyPart.setFileName(filename);
             // 处理附件名称中文（附带文件路径）乱码问题
-            messageBodyPart.setFileName(MimeUtility.encodeText(fileName));
+            messageBodyPart.setFileName(MimeUtility.encodeText(Constants.MAIL_FILE_NAME));
             multipart.addBodyPart(messageBodyPart);
             // 发送完整消息
             message.setContent(multipart);
             Transport transport = session.getTransport();
             transport.connect(Constants.SEND_EMAIL_NAME, Constants.SEND_EMAIL_CODE);
             // 发送消息
-            transport.sendMessage(message,message.getAllRecipients());
+            transport.sendMessage(message, message.getAllRecipients());
             transport.close();
             return true;
         } catch (MessagingException e) {
