@@ -2,7 +2,6 @@ package testcase;
 
 import org.tcl.autotest.utils.Constants;
 import org.tcl.autotest.utils.FileUtils;
-import org.testng.Reporter;
 import org.testng.annotations.BeforeTest;
 
 public class BeforeTestThings {
