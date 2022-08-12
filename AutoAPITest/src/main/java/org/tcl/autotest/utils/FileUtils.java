@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import org.tcl.autotest.Main;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -13,7 +14,7 @@ public class FileUtils {
     private static Logger mLogger = Logger.getLogger(Main.class.getClass());
     /**
      * 找出当前工程的绝对路径
-     * @param path 文件路径
+     * @param path 工程根目录下得文件路径
      */
     public static String findProjectFolder(String path) {
         File f = new File("");
@@ -59,5 +60,23 @@ public class FileUtils {
             }
         }
         return "";
+    }
+
+    public static boolean ClearTxt(String path) {
+        File file = new File(path);
+        try {
+            if(!file.exists()) {
+                file.createNewFile();
+            }
+            FileWriter fileWriter =new FileWriter(file);
+            // 写入空
+            fileWriter.write("");
+            fileWriter.flush();
+            fileWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+        return true;
     }
 }

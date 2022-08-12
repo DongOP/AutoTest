@@ -17,4 +17,7 @@ public class Constants {
     public static final String SEND_EMAIL_CODE = "xxx";
 
     public static final String MAIL_FILE_NAME = "接口自动化测试报告.html";
+
+    public static final String INFO_LOGO_NAME = "\\report\\log\\log.log";
+    public static final String ERROR_LOGO_NAME = "\\report\\log\\error.log";
 }

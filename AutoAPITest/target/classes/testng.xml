@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Dong's测试套件">
+<!--    <groups>-->
+<!--        <run>-->
+<!--            <include name="TestFileUtil"/>-->
+<!--        </run>-->
+<!--    </groups>-->
+
     <test name="Dong's测试模块">
-        <classes>
-            <!-- 添加不同测试类文件 -->
-            <class name="testcase.TestDemo"/>
-            <class name="testcase.TestFileUtil"/>
-            <class name="testcase.TestEmail"/>
-        </classes>
+        <packages>
+            <package name="testcase" />
+        </packages>
+<!--        <classes>-->
+<!--            &lt;!&ndash; 添加不同测试类文件 &ndash;&gt;-->
+<!--            <class name="testcase.TestDemo"/>-->
+<!--            <class name="testcase.TestFileUtil"/>-->
+<!--            <class name="testcase.TestEmail"/>-->
+<!--        </classes>-->
     </test>
 
     <!-- extentreports 监听器 -->

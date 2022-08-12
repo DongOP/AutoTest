@@ -3,5 +3,6 @@ testcase\TestEmail.class
 testcase\TestDemo$4.class
 testcase\TestFileUtil.class
 testcase\TestDemo$2.class
+testcase\BeforeTestThings.class
 testcase\TestDemo$3.class
 testcase\TestDemo.class

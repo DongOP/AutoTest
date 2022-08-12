@@ -1,6 +1,7 @@
 package org.tcl.autotest.utils;
 
 import com.sun.mail.util.MailSSLSocketFactory;
+import org.apache.log4j.Logger;
 
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
@@ -13,6 +14,7 @@ import java.util.Properties;
 
 public class SendEmailUtils {
 
+    private static Logger mLogger = Logger.getLogger(SendEmailUtils.class.getClass());
     private static final SendEmailUtils mSendEmailUtils = new SendEmailUtils();
 
     private SendEmailUtils() {
@@ -73,15 +75,17 @@ public class SendEmailUtils {
             }
             //添加收件人信息
             message.setRecipients(MimeMessage.RecipientType.TO, internetAddresses);
-            // Set CC: 抄送人
-            String[] cc = ccAddress.split(",");
-            //将收件人信息通过‘,’拆分多个邮件地址
-            InternetAddress[] ccAddresses = new InternetAddress[cc.length];
-            for (int i = 0; i < cc.length; i++) {
-                ccAddresses[i] = new InternetAddress(cc[i]);
+            if (!"".equals(ccAddress)) {
+                // Set CC: 抄送人
+                String[] cc = ccAddress.split(",");
+                //将收件人信息通过‘,’拆分多个邮件地址
+                InternetAddress[] ccAddresses = new InternetAddress[cc.length];
+                for (int i = 0; i < cc.length; i++) {
+                    ccAddresses[i] = new InternetAddress(cc[i]);
+                }
+                //添加收件人信息
+                message.setRecipients(MimeMessage.RecipientType.CC, ccAddresses);
             }
-            //添加收件人信息
-            message.setRecipients(MimeMessage.RecipientType.CC, ccAddresses);
             // Set Subject: 主题文字
             message.setSubject(emailTitle);
             // 创建消息部分
@@ -110,8 +114,10 @@ public class SendEmailUtils {
             transport.close();
             return true;
         } catch (MessagingException e) {
+            mLogger.error("MessagingException===" + e.toString());
             e.printStackTrace();
         } catch (UnsupportedEncodingException e) {
+            mLogger.error("UnsupportedEncodingException===" + e.toString());
             e.printStackTrace();
         }
         return false;
