@@ -5,6 +5,8 @@ target
 
 allure-results
 
-# 忽略所有txt结尾的文件
+# 忽略 report 下的所有文件
+report/
+#忽略所有 .xxx 结尾的文件
 *.log
 *.html
