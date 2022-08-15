@@ -1,0 +1,4 @@
+# 这是一个 gitignore 文件
+
+# 忽略 target 目录或者文件
+target
