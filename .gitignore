@@ -5,3 +5,6 @@ target
 
 allure-results
 
+# 忽略所有txt结尾的文件
+*.log
+*.html
