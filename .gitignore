@@ -5,6 +5,4 @@ target
 
 allure-results
 
-report
-
-log
+report/
