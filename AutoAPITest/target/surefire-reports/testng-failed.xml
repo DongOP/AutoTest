@@ -6,6 +6,21 @@
   </listeners>
   <test name="Dong&#039;s测试模块(failed)">
     <classes>
+      <class name="testcase.TestEmail">
+        <methods>
+          <include name="testSendMail"/>
+        </methods>
+      </class> <!-- testcase.TestEmail -->
+      <class name="testcase.BeforeTestThings">
+        <methods>
+          <include name="clearLog"/>
+        </methods>
+      </class> <!-- testcase.BeforeTestThings -->
+      <class name="testcase.TestFileUtil">
+        <methods>
+          <include name="testFileUtils"/>
+        </methods>
+      </class> <!-- testcase.TestFileUtil -->
       <class name="testcase.TestDemo">
         <methods>
           <include name="testHttpPostMap"/>
@@ -17,21 +32,6 @@
           <include name="testHttpGet"/>
         </methods>
       </class> <!-- testcase.TestDemo -->
-      <class name="testcase.TestFileUtil">
-        <methods>
-          <include name="testFileUtils"/>
-        </methods>
-      </class> <!-- testcase.TestFileUtil -->
-      <class name="testcase.BeforeTestThings">
-        <methods>
-          <include name="clearLog"/>
-        </methods>
-      </class> <!-- testcase.BeforeTestThings -->
-      <class name="testcase.TestEmail">
-        <methods>
-          <include name="testSendMail"/>
-        </methods>
-      </class> <!-- testcase.TestEmail -->
     </classes>
   </test> <!-- Dong's测试模块(failed) -->
 </suite> <!-- Failed suite [Dong's测试套件] -->

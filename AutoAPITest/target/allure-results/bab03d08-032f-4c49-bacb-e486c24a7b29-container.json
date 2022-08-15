@@ -1,1 +1,0 @@
-{"uuid":"bab03d08-032f-4c49-bacb-e486c24a7b29","name":"Dong's测试套件","start":1660293714964,"stop":1660293721824,"children":["84eae9e6-8b9f-41da-9ac5-8d89092f2c1d"],"afters":[{"name":"testSendMail","status":"passed","stage":"finished","description":"","start":1660293720640,"stop":1660293721824}]}

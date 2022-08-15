@@ -26,31 +26,31 @@
       <![CDATA[HttpUtils responseCodeKey=err_no, 校验 responseCodeValue=0]]>
     </line>
     <line>
-      <![CDATA[HttpUtils测试 okFlag=true, ---result={"q":"","p":false,"bs":"","csor":"0","err_no":0,"errmsg":"","g":[{"type":"his_normal","sa":"h_1","q":"95566"},{"type":"his_normal","sa":"h_2","q":"org.json版本号"},{"type":"his_normal","sa":"h_3","q":"org.json"},{"type":"his_normal","sa":"h_4","q":"okhttp版本号"},{"type":"his_normal","sa":"h_5","q":"maven添加okhttp"},{"type":"his_normal","sa":"h_6","q":"maven引入okhttp3"},{"type":"his_normal","sa":"h_7","q":"eclipse"},{"type":"his_normal","sa":"h_8","q":"notepad++下载"},{"type":"his_normal","sa":"h_9","q":"notepad++"},{"type":"his_normal","sa":"h_10","q":"notepad++是什么软件"}],"queryid":"0x9c28ba23541ee4"}
+      <![CDATA[HttpUtils测试 okFlag=true, ---result={"q":"","p":false,"bs":"","csor":"0","err_no":0,"errmsg":"","g":[{"type":"his_normal","sa":"h_1","q":"95566"},{"type":"his_normal","sa":"h_2","q":"org.json版本号"},{"type":"his_normal","sa":"h_3","q":"org.json"},{"type":"his_normal","sa":"h_4","q":"okhttp版本号"},{"type":"his_normal","sa":"h_5","q":"maven添加okhttp"},{"type":"his_normal","sa":"h_6","q":"maven引入okhttp3"},{"type":"his_normal","sa":"h_7","q":"eclipse"},{"type":"his_normal","sa":"h_8","q":"notepad++下载"},{"type":"his_normal","sa":"h_9","q":"notepad++"},{"type":"his_normal","sa":"h_10","q":"notepad++是什么软件"}],"queryid":"0x55412ae6855e84"}
 ]]>
     </line>
     <line>
       <![CDATA[testSendMail 测试 htmlPath=D:\Work\APITest\AutoTest\AutoAPITest\report\TestReport.html]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-08-12T08:41:54Z" name="Dong&#039;s测试套件" finished-at="2022-08-12T08:42:00Z" duration-ms="5620">
+  <suite started-at="2022-08-12T09:00:09Z" name="Dong&#039;s测试套件" finished-at="2022-08-12T09:00:15Z" duration-ms="5440">
     <groups>
       <group name="TestFileUtil">
-        <method signature="TestFileUtil.testFileUtils()[pri:0, instance:testcase.TestFileUtil@49298ce7]" name="testFileUtils" class="testcase.TestFileUtil"/>
+        <method signature="TestFileUtil.testFileUtils()[pri:0, instance:testcase.TestFileUtil@253c1256]" name="testFileUtils" class="testcase.TestFileUtil"/>
       </group> <!-- TestFileUtil -->
       <group name="TestDemo">
-        <method signature="TestDemo.checkMapNotNull()[pri:0, instance:testcase.TestDemo@7ea4d397]" name="checkMapNotNull" class="testcase.TestDemo"/>
-        <method signature="TestDemo.test(int, int)[pri:0, instance:testcase.TestDemo@7ea4d397]" name="test" class="testcase.TestDemo"/>
-        <method signature="TestDemo.test1()[pri:0, instance:testcase.TestDemo@7ea4d397]" name="test1" class="testcase.TestDemo"/>
-        <method signature="TestDemo.testHttpGet()[pri:0, instance:testcase.TestDemo@7ea4d397]" name="testHttpGet" class="testcase.TestDemo"/>
-        <method signature="TestDemo.testHttpPost()[pri:0, instance:testcase.TestDemo@7ea4d397]" name="testHttpPost" class="testcase.TestDemo"/>
-        <method signature="TestDemo.testHttpPostMap()[pri:0, instance:testcase.TestDemo@7ea4d397]" name="testHttpPostMap" class="testcase.TestDemo"/>
-        <method signature="TestDemo.testTimeOut()[pri:0, instance:testcase.TestDemo@7ea4d397]" name="testTimeOut" class="testcase.TestDemo"/>
+        <method signature="TestDemo.checkMapNotNull()[pri:0, instance:testcase.TestDemo@49298ce7]" name="checkMapNotNull" class="testcase.TestDemo"/>
+        <method signature="TestDemo.test(int, int)[pri:0, instance:testcase.TestDemo@49298ce7]" name="test" class="testcase.TestDemo"/>
+        <method signature="TestDemo.test1()[pri:0, instance:testcase.TestDemo@49298ce7]" name="test1" class="testcase.TestDemo"/>
+        <method signature="TestDemo.testHttpGet()[pri:0, instance:testcase.TestDemo@49298ce7]" name="testHttpGet" class="testcase.TestDemo"/>
+        <method signature="TestDemo.testHttpPost()[pri:0, instance:testcase.TestDemo@49298ce7]" name="testHttpPost" class="testcase.TestDemo"/>
+        <method signature="TestDemo.testHttpPostMap()[pri:0, instance:testcase.TestDemo@49298ce7]" name="testHttpPostMap" class="testcase.TestDemo"/>
+        <method signature="TestDemo.testTimeOut()[pri:0, instance:testcase.TestDemo@49298ce7]" name="testTimeOut" class="testcase.TestDemo"/>
       </group> <!-- TestDemo -->
     </groups>
-    <test started-at="2022-08-12T08:41:54Z" name="Dong&#039;s测试模块" finished-at="2022-08-12T08:42:00Z" duration-ms="5620">
+    <test started-at="2022-08-12T09:00:09Z" name="Dong&#039;s测试模块" finished-at="2022-08-12T09:00:15Z" duration-ms="5440">
       <class name="testcase.TestEmail">
-        <test-method is-config="true" signature="testSendMail()[pri:0, instance:testcase.TestEmail@1d81e101]" started-at="2022-08-12T16:42:00Z" name="testSendMail" finished-at="2022-08-12T16:42:01Z" duration-ms="1184" status="PASS">
+        <test-method is-config="true" signature="testSendMail()[pri:0, instance:testcase.TestEmail@ec50f54]" started-at="2022-08-12T17:00:15Z" name="testSendMail" finished-at="2022-08-12T17:00:16Z" duration-ms="1038" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[testSendMail 测试 htmlPath=D:\Work\APITest\AutoTest\AutoAPITest\report\TestReport.html]]>
@@ -59,13 +59,13 @@
         </test-method> <!-- testSendMail -->
       </class> <!-- testcase.TestEmail -->
       <class name="testcase.TestFileUtil">
-        <test-method signature="testFileUtils()[pri:0, instance:testcase.TestFileUtil@49298ce7]" started-at="2022-08-12T16:42:00Z" name="testFileUtils" description="测试 FileUtils" depends-on-groups="TestDemo" finished-at="2022-08-12T16:42:00Z" duration-ms="0" status="SKIP">
+        <test-method signature="testFileUtils()[pri:0, instance:testcase.TestFileUtil@253c1256]" started-at="2022-08-12T17:00:15Z" name="testFileUtils" description="测试 FileUtils" depends-on-groups="TestDemo" finished-at="2022-08-12T17:00:15Z" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method TestFileUtil.testFileUtils()[pri:0, instance:testcase.TestFileUtil@49298ce7] depends on not successfully finished methods in group "TestDemo"]]>
+              <![CDATA[Method TestFileUtil.testFileUtils()[pri:0, instance:testcase.TestFileUtil@253c1256] depends on not successfully finished methods in group "TestDemo"]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestFileUtil.testFileUtils()[pri:0, instance:testcase.TestFileUtil@49298ce7] depends on not successfully finished methods in group "TestDemo"
+              <![CDATA[java.lang.Throwable: Method TestFileUtil.testFileUtils()[pri:0, instance:testcase.TestFileUtil@253c1256] depends on not successfully finished methods in group "TestDemo"
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
@@ -96,7 +96,7 @@
         </test-method> <!-- testFileUtils -->
       </class> <!-- testcase.TestFileUtil -->
       <class name="testcase.TestDemo">
-        <test-method signature="checkMapNotNull()[pri:0, instance:testcase.TestDemo@7ea4d397]" started-at="2022-08-12T16:41:55Z" name="checkMapNotNull" description="遍历检查Map不为空" finished-at="2022-08-12T16:41:56Z" duration-ms="986" status="PASS">
+        <test-method signature="checkMapNotNull()[pri:0, instance:testcase.TestDemo@49298ce7]" started-at="2022-08-12T17:00:10Z" name="checkMapNotNull" description="遍历检查Map不为空" finished-at="2022-08-12T17:00:11Z" duration-ms="991" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Key = 0, Value = 1]]>
@@ -115,7 +115,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- checkMapNotNull -->
-        <test-method signature="test(int, int)[pri:0, instance:testcase.TestDemo@7ea4d397]" started-at="2022-08-12T16:41:56Z" name="test" data-provider="provideNumbers" finished-at="2022-08-12T16:41:56Z" duration-ms="2" status="PASS">
+        <test-method signature="test(int, int)[pri:0, instance:testcase.TestDemo@49298ce7]" started-at="2022-08-12T17:00:11Z" name="test" data-provider="provideNumbers" finished-at="2022-08-12T17:00:11Z" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -131,7 +131,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="test(int, int)[pri:0, instance:testcase.TestDemo@7ea4d397]" started-at="2022-08-12T16:41:56Z" name="test" data-provider="provideNumbers" finished-at="2022-08-12T16:41:56Z" duration-ms="1" status="PASS">
+        <test-method signature="test(int, int)[pri:0, instance:testcase.TestDemo@49298ce7]" started-at="2022-08-12T17:00:11Z" name="test" data-provider="provideNumbers" finished-at="2022-08-12T17:00:11Z" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -147,7 +147,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="test(int, int)[pri:0, instance:testcase.TestDemo@7ea4d397]" started-at="2022-08-12T16:41:56Z" name="test" data-provider="provideNumbers" finished-at="2022-08-12T16:41:56Z" duration-ms="1" status="PASS">
+        <test-method signature="test(int, int)[pri:0, instance:testcase.TestDemo@49298ce7]" started-at="2022-08-12T17:00:11Z" name="test" data-provider="provideNumbers" finished-at="2022-08-12T17:00:11Z" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -163,7 +163,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="test1()[pri:0, instance:testcase.TestDemo@7ea4d397]" started-at="2022-08-12T16:41:56Z" name="test1" description="单元测试验证" finished-at="2022-08-12T16:41:56Z" duration-ms="2" status="FAIL">
+        <test-method signature="test1()[pri:0, instance:testcase.TestDemo@49298ce7]" started-at="2022-08-12T17:00:11Z" name="test1" description="单元测试验证" finished-at="2022-08-12T17:00:11Z" duration-ms="3" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [2] but found [1]]]>
@@ -215,7 +215,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method signature="testHttpGet()[pri:0, instance:testcase.TestDemo@7ea4d397]" started-at="2022-08-12T16:41:56Z" name="testHttpGet" description="doGet 请求测试" finished-at="2022-08-12T16:41:57Z" duration-ms="1318" status="PASS">
+        <test-method signature="testHttpGet()[pri:0, instance:testcase.TestDemo@49298ce7]" started-at="2022-08-12T17:00:11Z" name="testHttpGet" description="doGet 请求测试" finished-at="2022-08-12T17:00:12Z" duration-ms="1159" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[测试URL（来自excel）=https://www.baidu.com/sugrec?prod=pc_his&from=pc_web&json=1&sid=36838_36542_36757_36726_36413_36955_36946_36165_36917_36570_36807_36738_36923_26350_36864&hisdata=%5B%7B%22time%22%3A1659578071%2C%22kw%22%3A%22notepad%2B%2B%E6%98%AF%E4%BB%80%E4%B9%88%E8%BD%AF%E4%BB%B6%22%7D%2C%7B%22time%22%3A1659578074%2C%22kw%22%3A%22notepad%2B%2B%22%7D%2C%7B%22time%22%3A1659578089%2C%22kw%22%3A%22notepad%2B%2B%E4%B8%8B%E8%BD%BD%22%7D%2C%7B%22time%22%3A1659578907%2C%22kw%22%3A%22eclipse%22%7D%2C%7B%22time%22%3A1659579451%2C%22kw%22%3A%22maven%E5%BC%95%E5%85%A5okhttp3%22%7D%2C%7B%22time%22%3A1659580009%2C%22kw%22%3A%22maven%E6%B7%BB%E5%8A%A0okhttp%22%7D%2C%7B%22time%22%3A1659580146%2C%22kw%22%3A%22okhttp%E7%89%88%E6%9C%AC%E5%8F%B7%22%7D%2C%7B%22time%22%3A1659580753%2C%22kw%22%3A%22org.json%22%7D%2C%7B%22time%22%3A1659580762%2C%22kw%22%3A%22org.json%E7%89%88%E6%9C%AC%E5%8F%B7%22%7D%2C%7B%22time%22%3A1659581203%2C%22kw%22%3A%2295566%22%7D%5D&_t=1659581298387&req=2&sc=eb&csor=0]]>
@@ -224,41 +224,28 @@
               <![CDATA[HttpUtils responseCodeKey=err_no, 校验 responseCodeValue=0]]>
             </line>
             <line>
-              <![CDATA[HttpUtils测试 okFlag=true, ---result={"q":"","p":false,"bs":"","csor":"0","err_no":0,"errmsg":"","g":[{"type":"his_normal","sa":"h_1","q":"95566"},{"type":"his_normal","sa":"h_2","q":"org.json版本号"},{"type":"his_normal","sa":"h_3","q":"org.json"},{"type":"his_normal","sa":"h_4","q":"okhttp版本号"},{"type":"his_normal","sa":"h_5","q":"maven添加okhttp"},{"type":"his_normal","sa":"h_6","q":"maven引入okhttp3"},{"type":"his_normal","sa":"h_7","q":"eclipse"},{"type":"his_normal","sa":"h_8","q":"notepad++下载"},{"type":"his_normal","sa":"h_9","q":"notepad++"},{"type":"his_normal","sa":"h_10","q":"notepad++是什么软件"}],"queryid":"0x9c28ba23541ee4"}
+              <![CDATA[HttpUtils测试 okFlag=true, ---result={"q":"","p":false,"bs":"","csor":"0","err_no":0,"errmsg":"","g":[{"type":"his_normal","sa":"h_1","q":"95566"},{"type":"his_normal","sa":"h_2","q":"org.json版本号"},{"type":"his_normal","sa":"h_3","q":"org.json"},{"type":"his_normal","sa":"h_4","q":"okhttp版本号"},{"type":"his_normal","sa":"h_5","q":"maven添加okhttp"},{"type":"his_normal","sa":"h_6","q":"maven引入okhttp3"},{"type":"his_normal","sa":"h_7","q":"eclipse"},{"type":"his_normal","sa":"h_8","q":"notepad++下载"},{"type":"his_normal","sa":"h_9","q":"notepad++"},{"type":"his_normal","sa":"h_10","q":"notepad++是什么软件"}],"queryid":"0x55412ae6855e84"}
 ]]>
             </line>
           </reporter-output>
         </test-method> <!-- testHttpGet -->
-        <test-method signature="testHttpPost()[pri:0, instance:testcase.TestDemo@7ea4d397]" started-at="2022-08-12T16:41:57Z" name="testHttpPost" description="doPost 请求测试" finished-at="2022-08-12T16:41:57Z" duration-ms="32" status="PASS">
+        <test-method signature="testHttpPost()[pri:0, instance:testcase.TestDemo@49298ce7]" started-at="2022-08-12T17:00:12Z" name="testHttpPost" description="doPost 请求测试" finished-at="2022-08-12T17:00:12Z" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHttpPost -->
-        <test-method signature="testHttpPostMap()[pri:0, instance:testcase.TestDemo@7ea4d397]" started-at="2022-08-12T16:41:57Z" name="testHttpPostMap" description="doPostForm 请求测试" finished-at="2022-08-12T16:41:57Z" duration-ms="3" status="PASS">
+        <test-method signature="testHttpPostMap()[pri:0, instance:testcase.TestDemo@49298ce7]" started-at="2022-08-12T17:00:12Z" name="testHttpPostMap" description="doPostForm 请求测试" finished-at="2022-08-12T17:00:12Z" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHttpPostMap -->
-        <test-method signature="testTimeOut()[pri:0, instance:testcase.TestDemo@7ea4d397]" started-at="2022-08-12T16:41:57Z" name="testTimeOut" finished-at="2022-08-12T16:42:00Z" duration-ms="3024" status="FAIL">
+        <test-method signature="testTimeOut()[pri:0, instance:testcase.TestDemo@49298ce7]" started-at="2022-08-12T17:00:12Z" name="testTimeOut" finished-at="2022-08-12T17:00:15Z" duration-ms="3012" status="FAIL">
           <exception class="org.testng.internal.thread.ThreadTimeoutException">
             <message>
               <![CDATA[Method testcase.TestDemo.testTimeOut() didn't finish within the time-out 3000]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method testcase.TestDemo.testTimeOut() didn't finish within the time-out 3000
-	at java.base@17.0.3.1/java.util.Arrays.copyOf(Arrays.java:3537)
-	at java.base@17.0.3.1/java.lang.String.encodeUTF8(String.java:1265)
-	at java.base@17.0.3.1/java.lang.String.encode(String.java:825)
-	at java.base@17.0.3.1/java.lang.String.getBytes(String.java:1803)
-	at app//org.apache.maven.surefire.report.ConsoleOutputCapture$ForwardingPrintStream.println(ConsoleOutputCapture.java:90)
-	at app//testcase.TestDemo.testTimeOut(TestDemo.java:132)
-	at java.base@17.0.3.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.3.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.3.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.3.1/java.lang.reflect.Method.invoke(Method.java:568)
-	at app//org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at app//org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
-	at app//org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
-	at java.base@17.0.3.1/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base@17.0.3.1/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base@17.0.3.1/java.util.concurrent.FutureTask.set(FutureTask.java:229)
+	at java.base@17.0.3.1/java.util.concurrent.FutureTask.run(FutureTask.java:272)
 	at java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base@17.0.3.1/java.lang.Thread.run(Thread.java:833)
@@ -270,7 +257,7 @@
         </test-method> <!-- testTimeOut -->
       </class> <!-- testcase.TestDemo -->
       <class name="testcase.BeforeTestThings">
-        <test-method is-config="true" signature="clearLog()[pri:0, instance:testcase.BeforeTestThings@240139e1]" started-at="2022-08-12T16:41:54Z" name="clearLog" finished-at="2022-08-12T16:41:55Z" duration-ms="33" status="PASS">
+        <test-method is-config="true" signature="clearLog()[pri:0, instance:testcase.BeforeTestThings@7ea4d397]" started-at="2022-08-12T17:00:09Z" name="clearLog" finished-at="2022-08-12T17:00:10Z" duration-ms="29" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearLog -->
